@@ -41,7 +41,7 @@ public class StudentTest {
         students.add(student5);
 
 
-        //Sắp xếp điểm từ cao xuống
+        // Sắp xếp danh sách học sinh điểm từ cao xuống
 
         Collections.sort(students, new Comparator<Student>() {  // anominus class
             @Override
@@ -61,6 +61,8 @@ public class StudentTest {
 
         }
         System.out.println("");
+        //Điểm cao nhất trường:
+
         System.out.println(" Học sinh có điểm cao nhất trường: ");
         System.out.println(students.get(0));
         System.out.println("");
@@ -89,6 +91,8 @@ public class StudentTest {
 
         }
         System.out.println("");
+        //Điểm cao nhất lớp
+
         System.out.println( "Học sinh có điểm cao nhất lớp: ");
         System.out.println(studentList.get(0));
         System.out.println("");
@@ -103,6 +107,7 @@ public class StudentTest {
         gradeListMap.put(grade1, clazzList);
         System.out.println("");
 
+       //Danh sách học sinh trong trường
 
         Map<School,List<Student>> schoolListMap = new HashMap<>();
         List<Student> studentList1 = Arrays.asList(student,student2,student3,student4,student5);
@@ -112,6 +117,8 @@ public class StudentTest {
         }
         schoolListMap.put(school0,studentList1);
         System.out.println("");
+
+        //Điểm trung bình học sinh trong trường
 
         double sumClazz=0;
         double avgClazz=0;
@@ -126,6 +133,7 @@ public class StudentTest {
 
         }
 
+          //Danh sách học sinh trong khối
 
         Map<Grade,List<Student>> gradeListMap1 = new HashMap<>();
         List<Student> studentList2 = Arrays.asList(student3,student4,student5);
@@ -136,6 +144,7 @@ public class StudentTest {
         gradeListMap1.put(grade1,studentList2);
         System.out.println("");
 
+        // Điểm trung bình học sinh trong khối
         double sumGrade=0;
         double avgGrade=0;
         for (Map.Entry<Grade,List<Student>> entry : gradeListMap1.entrySet()) {
