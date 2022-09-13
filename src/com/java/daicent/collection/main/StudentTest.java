@@ -63,7 +63,7 @@ public class StudentTest {
         System.out.println("");
         //Điểm cao nhất trường:
 
-        System.out.println(" Học sinh có điểm cao nhất trường: ");
+        System.out.println("Học sinh có điểm cao nhất trường: ");
         System.out.println(students.get(0));
         System.out.println("");
 
@@ -87,7 +87,7 @@ public class StudentTest {
         });
         System.out.println("Sắp xếp điểm tăng dần trong lớp:");
         for (Student s: studentList) {
-            System.out.println(s.getNameStudent() + s.getCoreAvgStudent());
+            System.out.println(s.toString());
 
         }
         System.out.println("");
