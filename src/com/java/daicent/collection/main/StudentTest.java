@@ -1,6 +1,7 @@
 package com.java.daicent.collection.main;
 
 import com.java.daicent.collection.model.*;
+import sun.applet.resources.MsgAppletViewer;
 
 import java.util.*;
 
@@ -9,6 +10,7 @@ public class StudentTest {
 
     public static void main(String[] args) {
         School school0 = new School(1, "Daicent");
+        School school1 = new School(2, "CodeGym");
 
 
         Subject subject0 = new Subject(1, "Math");
@@ -111,11 +113,16 @@ public class StudentTest {
 
         Map<School,List<Student>> schoolListMap = new HashMap<>();
         List<Student> studentList1 = Arrays.asList(student,student2,student3,student4,student5);
+        System.out.println( "Số học sinh trong trường " + school0 +":" +studentList1.size());
+        System.out.println("");
         System.out.println("Danh sách các học sinh trong trường " + school0 + ":");
         for (Student s1 :studentList1) {
             System.out.println(s1.toString());
         }
         schoolListMap.put(school0,studentList1);
+        System.out.println( "hi" +schoolListMap.values());
+
+
         System.out.println("");
 
         //Điểm trung bình học sinh trong trường
@@ -156,6 +163,7 @@ public class StudentTest {
             System.out.println("Điểm trung bình học sinh trong khối: " + avgGrade);
 
         }
+
 
 
 
